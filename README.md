@@ -16,6 +16,22 @@ Participants should form groups of 3 to 5 and select a simple dataset, such as I
 
 **Q1:** Develop diverse predictive models targeting the selected dataset. Each group member should create a distinct model.
 
+<details>
+    <summary>💡 Basic flask app</summary>
+    ```python
+        from flask import Flask
+        app = Flask(__name__)
+        
+        @app.route('/')
+        def hello_world():
+            return 'Hello, World!'
+        
+        
+        
+        app.run(host="0.0.0.0")
+    ```
+</details>
+
 - Evaluate the accuracy and performance of your model.
 - Adapt your model for API access. This API should include a GET `predict` route that accepts model arguments and returns a prediction.
 - Determine a standardized API response format within your group.
